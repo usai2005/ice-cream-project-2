@@ -1,0 +1,85 @@
+body {
+  font-family: $main-font;
+  color: getColor('primary-text');
+  font-size: 16px;
+  background-color: getColor('bg-color');
+  letter-spacing: 0.04em;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+
+%list {
+  list-style: none;
+}
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin transition($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin fonts($fw, $fs, $lh, $ls, $tt: false) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  @if $tt {
+    text-transform: $tt;
+  }
+}
+@mixin flexCentered() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
