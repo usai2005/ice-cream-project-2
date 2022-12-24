@@ -6,6 +6,7 @@
     @media screen and (min-width: 480px) {
       height: 466px;
       margin-bottom: 40px;
+      margin-top: -1000px;
     }
     
     @media screen and (min-width: 768px) {
@@ -13,6 +14,7 @@
         margin-bottom: 80px;
        /* width: 705px; */
        margin-top: -700px;
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -24,7 +26,7 @@
 
     position: relative;
     overflow: hidden;
-    margin-top: -830px;
+    margin-top: -1000px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
