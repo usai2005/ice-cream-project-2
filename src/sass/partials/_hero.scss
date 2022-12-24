@@ -121,6 +121,12 @@
 .arrow {
   color: getColor('secondary-text');
   fill: getColor('secondary-text');
+  @include transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: getColor('accent');
+  }
 }
 
 // back-ground images
