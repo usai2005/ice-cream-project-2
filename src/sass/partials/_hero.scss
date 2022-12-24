@@ -1,0 +1,49 @@
+.hero {
+  outline: 1px solid red;
+  padding-top: 50px;
+  min-height: 454px;
+  //   padding: 45px 0 65px;
+  background-image: url(.././images/hero/dots_mobile.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  position: relative;
+  //   & .container {
+  //     height: auto;
+  //     position: relative;
+  //   }
+}
+
+.hero__title {
+  max-width: 247px;
+  margin-bottom: 32px;
+  font-family: $secondary-font;
+  @include fonts(400, 26px, 1.27, 0.04em, uppercase);
+  color: getColor('secondary-text');
+}
+
+.hero__navigation-list {
+  display: flex;
+
+  & .hero__navigation-item:first-child {
+    margin-right: 12px;
+  }
+}
+.market-place-list {
+  display: none;
+}
+
+.hero__content {
+  display: none;
+}
+
+.ice-cream {
+  display: block;
+  //   width: 100%;
+  //   height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  // right: 50%;
+  transform: translateX(-50%);
+}
