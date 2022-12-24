@@ -52,7 +52,7 @@
     }
   }
 
-  @media screen and (min-width: 480px) and (min-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     background-size: 480px;
     height: 1069px;
     margin-top: 32px;
