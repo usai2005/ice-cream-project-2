@@ -6,23 +6,26 @@
     @media screen and (min-width: 480px) {
       height: 466px;
       margin-bottom: 40px;
+      margin-top: -1000px;
     }
     
     @media screen and (min-width: 768px) {
         height: 355px;
         margin-bottom: 80px;
        /* width: 705px; */
+      margin-top: -830px;
     }
 
     @media screen and (min-width: 1200px) {
         height: 361px;
         margin-bottom: 100px;
        /* width: 1013px;*/ 
+      margin-top: -830px;
     }
 
     position: relative;
     overflow: hidden;
-    margin-top: -830px;
+    margin-top: -1000px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
