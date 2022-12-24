@@ -18,6 +18,7 @@ $colors: (
   'grey': #ababab,
   'copyright': #7a7a7a,
   'btn-green': #0a8817,
+  'line-color': #e1e1e1,
 );
 @function getColor($key) {
   @return map-get($colors, $key);

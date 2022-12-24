@@ -7,7 +7,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 100px;
     padding-bottom: 120px;
   }
 }
@@ -88,7 +87,6 @@
     border-radius: 4px;
     line-height: 1.2;
     text-align: center;
-    letter-spacing: 0.04em;
     background-color: getColor('accent');
 
     @media screen and (min-width: 768px) {
@@ -123,7 +121,7 @@
   height: 1px;
   margin-top: 24px;
   margin-bottom: 24px;
-  background-color: #e1e1e1;
+  background-color: getColor('line-color');
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
@@ -133,9 +131,6 @@
 
 .location__text {
   line-height: 1.86;
-  letter-spacing: 0.04em;
-
-  color: #131313;
 
   &--inverse {
     line-height: 1.83;
@@ -163,8 +158,7 @@
 
 .datetime__text {
   line-height: 1.86;
-
-  color: getColor('primary-text');
+  letter-spacing: normal;
 
   &--inverse {
     color: getColor('grey');
@@ -183,7 +177,8 @@
 
 .contact__link {
   line-height: 1.6;
-  color: getColor('primary-text');
+  letter-spacing: normal;
+  color: inherit;
   @include transition(color);
 
   @media screen and (min-width: 768px) {
@@ -280,6 +275,6 @@
 }
 
 .contacts-button__icon {
-    margin-left: 4px;
-    fill: currentColor;
+  margin-left: 4px;
+  fill: currentColor;
 }
