@@ -1,5 +1,7 @@
 @import './common';
 
-@import 'utils/variables';
-@import 'utils/general-styles';
+@import './utils/variables';
+@import './utils/general-styles';
+
 @import './partials/footer';
+@import './partials/buy-now-modal';

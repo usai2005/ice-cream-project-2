@@ -1,0 +1,142 @@
+.modal {
+  position: absolute;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  top: 10px;
+  left: 50%;
+
+  width: 280px;
+  height: 991px;
+
+  background-color: getColor('secondary-text');
+
+  border: 2px solid getColor('accent');
+
+  border-radius: 10px;
+
+  transform: translateX(-50%) scale(1);
+  transition: transform 400ms $timing-function;
+
+  padding: 28px 74px 29px;
+
+  @media screen and (min-width: 768px) {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50% -50%) scale(1);
+
+    width: 568px;
+    height: 644px;
+
+    padding: 32px 54px;
+  }
+}
+
+.modal__title {
+  // display: inline-block;
+  font-family: $secondary-font;
+  color: getColor('primary-text');
+
+  line-height: calc(24 / 16);
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 40px;
+  }
+}
+
+.modal-form {
+  display: flex;
+
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+
+.modal-form__unit {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  height: 199px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.modal-form__checkbox {
+  position: absolute;
+
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+
+  width: 132px;
+  height: 136px;
+
+  border: 2px solid getColor('modal-border-green');
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+  cursor: pointer;
+}
+
+.modal-form__image {
+  display: block;
+  position: absolute;
+
+  // width: 132px;
+  // height: 132px;
+
+  transform: translateY(-50%);
+  border-radius: 50%;
+
+  opacity: 0.1;
+}
+
+.modal-form__image--green {
+  background-image: radial-gradient(
+    circle at center,
+    #f44336 15%,
+    #09792b 15%,
+    #09792b 40%,
+    #00b9ff 40%,
+    #00b9ff 65%,
+    #ffb800 100%
+  );
+  // background: linear-gradient(
+  //     0deg,
+  //     rgba(156, 190, 143, 0.7),
+  //     rgba(156, 190, 143, 0.7)
+  //   ),
+  //   #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.modal-form__unit-title {
+  position: absolute;
+  bottom: 20px;
+  font-weight: 700;
+  line-height: calc(20 / 16);
+  text-transform: uppercase;
+}
+
+.modal-form__choosing {
+  display: block;
+}
