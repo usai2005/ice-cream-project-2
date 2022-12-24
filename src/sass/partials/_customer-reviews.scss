@@ -2,12 +2,12 @@
     height: 466px;
     /*width: 280px;*/
     margin-bottom: 40px;
-    margin-top: -560px;
 
     @media screen and (min-width: 480px) {
       height: 466px;
       margin-bottom: 40px;
       margin-top: -560px;
+      margin-top: -870px;
 
     }
     
@@ -15,7 +15,7 @@
         height: 355px;
         margin-bottom: 80px;
        /* width: 705px; */
-       margin-top: -700px;
+       margin-top: -730px;
 
     }
 
@@ -23,12 +23,12 @@
         height: 361px;
         margin-bottom: 100px;
        /* width: 1013px;*/ 
-       margin-top: -466px;
+       margin-top: -560px;
     }
 
     position: relative;
     overflow: hidden;
-    margin-top: -560px;
+    margin-top: -870px;
 
     display: -webkit-box;
     display: -webkit-flex;
