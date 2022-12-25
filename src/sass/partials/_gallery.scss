@@ -124,6 +124,7 @@
     justify-content: center;
     position:absolute; 
     width: 280px;
+    border-radius: 8px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -131,10 +132,12 @@
       
     @media screen and (min-width: 768px) {
         width: 704px;
+        border-radius: 18px;
     }
   
     @media screen and (min-width: 1200px) {
         width: 1013px;
+        border-radius: 24px;
     } 
     top: 0;
     left:0; 
@@ -143,7 +146,6 @@
     animation-name: fade; 
     animation-duration: 9s; 
     animation-iteration-count: infinite; 
-border-radius: 24px;
 }
 .fadein img:nth-child(1) { 
 animation-delay: 0s; 
