@@ -105,19 +105,19 @@
   &.button {
     @extend %btn;
     @extend %border;
-    @include btn-sizes(108px, 38px, 8px, 12, 1.25, 11px 26px, 600);
+    @include btn-sizes(108px, 38px, 8px, 12, 1.25, 11px 26px);
 
     @media screen and (min-width: 1200px) {
-      @include btn-sizes(134px, 42px, 8px, 14, 1.25, 12px 34px, 600);
+      @include btn-sizes(134px, 42px, 8px, 14, 1.25, 12px 34px);
     }
   }
 
   &.underline {
     @extend %undrln;
-    @include btn-sizes(auto, auto, 0px, 12, 1.25, 0px 0px, 600);
+    @include btn-sizes(auto, auto, 0px, 12, 1.25, 0px 0px);
 
     @media screen and (min-width: 1200px) {
-      @include btn-sizes(auto, auto, 0px, 14, 1.25, 0px 0px, 600);
+      @include btn-sizes(auto, auto, 0px, 14, 1.25, 0px 0px);
     }
   }
 }
