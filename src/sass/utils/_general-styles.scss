@@ -189,13 +189,17 @@ img {
   padding: $pdn;
 }
 
-
-.btn__border {
-  @extend %btn;
-  @extend %bg;
-  @include btn-sizes (108px, 38px, 8px, 12, 1.25, 11px 26px);
-}
-
 .btn-icon {
-fill: currentColor;
+  fill: currentColor;
+  margin-left: 4px;
 }
+
+// template
+
+// .btn__border {
+//   @extend %btn;
+//   @extend %bg;
+//   @include btn-sizes (108px, 38px, 8px, 12, 1.25, 11px 26px);
+// }
+
+
