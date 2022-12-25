@@ -28,8 +28,8 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 320px) {
+    width: 320px;
   }
 
   @media screen and (min-width: 768px) {
@@ -88,7 +88,6 @@ img {
   align-items: center;
 }
 
-
 // buttons
 
 // common styles
@@ -109,72 +108,66 @@ img {
 // colors
 
 %border {
- 
   color: #000000;
   background-color: transparent;
-  border-color: #F8D24E;
-
-&:hover {
-    border-color: #0A8817;
-    transition: all 0.3s ease;
-    }
-
-  &:focus {
-    border-color: #0A8817;
-    color: #FCFCFC;
-    transition: all 0.3s ease;
-    }
-
-  &:disabled {
-    border-color: #ABABAB;
-    transition: all 0.3s ease;
-    }
-  }
-
-%bg {
-
-  color: #000000;
-  background-color: #F8D24E;
-  border: 0;
-
+  border-color: #f8d24e;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function, border-color 250ms $timing-function;
 
   &:hover {
-    background-color: #0A8817;
-    transition: all 0.3s ease;
+    border-color: #0a8817;
   }
 
   &:focus {
-    background-color: #0A8817;
-    color: #FCFCFC;
-    transition: all 0.3s ease;
+    border-color: #0a8817;
+    color: #fcfcfc;
   }
 
   &:disabled {
-    background-color: #ABABAB;
-    transition: all 0.3s ease;
+    border-color: #ababab;
+  }
+}
+
+%bg {
+  color: #000000;
+  background-color: #f8d24e;
+  border: 0;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
+
+  &:disabled {
+    background-color: #ababab;
   }
 }
 
 %undrln {
-
   text-decoration: underline;
-  color: #F8D24E;
+  color: #f8d24e;
   background-color: transparent;
   border: 0;
+  font-weight: 600;
+
+  @include transition(color);
 
   &:hover {
-    color: #0A8817;
-    transition: all 0.3s ease;
+    color: #0a8817;
   }
 
   &:focus {
-    color: #FCFCFC;
-    transition: all 0.3s ease;
+    color: #fcfcfc;
   }
 
   &:disabled {
-    color: #ABABAB;
-    transition: all 0.3s ease;
+    color: #ababab;
   }
 }
 
@@ -189,10 +182,10 @@ img {
   padding: $pdn;
 }
 
+
 .btn-icon {
   fill: currentColor;
   margin-left: 4px;
-}
 
 // template
 
@@ -201,5 +194,3 @@ img {
 //   @extend %bg;
 //   @include btn-sizes (108px, 38px, 8px, 12, 1.25, 11px 26px);
 // }
-
-
