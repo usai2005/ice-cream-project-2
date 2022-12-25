@@ -84,6 +84,10 @@
 }
 
 .page-header__button {
+@extend %btn;
+@extend %bg;
+@include btn-sizes (152px, 42px, 10px, 14, 1.22, 12px);
+
   @media screen and (max-width: 767px) {
     display: none;
   }
