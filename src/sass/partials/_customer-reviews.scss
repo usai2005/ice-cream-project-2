@@ -6,23 +6,29 @@
     @media screen and (min-width: 480px) {
       height: 466px;
       margin-bottom: 40px;
+      margin-top: -865px;
+
     }
     
     @media screen and (min-width: 768px) {
         height: 355px;
         margin-bottom: 80px;
        /* width: 705px; */
+       margin-top: -730px;
+
     }
 
     @media screen and (min-width: 1200px) {
         height: 361px;
         margin-bottom: 100px;
        /* width: 1013px;*/ 
+       margin-top: -570px;
     }
 
     position: relative;
     overflow: hidden;
-    margin-top: -830px;
+    margin-top: -870px;
+
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -145,42 +151,43 @@
   .slider__txt {
     margin-bottom: 32px;
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 255%;
     /* or 31px */
 
-    text-align: center;
+    text-align:center;
 
     color: #FCFCFC;
   
-    display: flex;
-    align-content: center;
-    justify-content: center;
     background-color: rgba(132, 161, 120, 1);
-    border-radius: 24px;
+    border-radius: 10px;
     width: 280px;
     height: 256px;
-    padding: 35px 39px;
+    padding: 35px 39px; 
 
-    @media screen and (min-width: 480px) {
-      width: 440px;
-      height: 138px;
-
-      padding: 20px 10px;
-    }
 
     @media screen and (min-width: 768px) {
         width: 705px;
         height: 138px;
         padding: 28px 80px 29px 80px;
+        font-size: 14px;
+        line-height: 186%;
+        /* or 26px */
+        border-radius: 24px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 968px;
         height: 138px;
         padding: 43px 74px 41px 73px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 186%;
+        /* or 30px */
+        letter-spacing: 0.04em;
+        border-radius: 24px;
     }
   
     

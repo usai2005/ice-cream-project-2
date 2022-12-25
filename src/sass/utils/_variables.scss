@@ -4,6 +4,7 @@ $secondary-font: 'Seymour One', sans-serif;
 $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 $box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+$contacts-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 
 $colors: (
   'primary-text': #131313,
@@ -11,12 +12,15 @@ $colors: (
   'secondary-text': #fcfcfc,
   'accent': #f8d24e,
   'bg-color': #84a178,
+  'bg-mob-color': #85a279,
   'olive': #aec6a5,
   'beige': #efd478,
   'brown': #d6936d,
   'grey': #ababab,
+  'white': #ffffff,
   'copyright': #7a7a7a,
   'btn-green': #0a8817,
+  'line-color': #e1e1e1,
 );
 @function getColor($key) {
   @return map-get($colors, $key);

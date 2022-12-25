@@ -28,8 +28,8 @@ img {
   padding-left: 20px;
   padding-right: 20px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @media screen and (min-width: 320px) {
+    width: 320px;
   }
 
   @media screen and (min-width: 768px) {
@@ -86,4 +86,116 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+// buttons
+
+// common styles
+
+%btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px;
+  border-style: solid;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  // padding: 5px 10px;
+  cursor: pointer;
+}
+
+// colors
+
+%border {
+ 
+  color: #000000;
+  background-color: transparent;
+  border-color: #F8D24E;
+
+&:hover {
+    border-color: #0A8817;
+    transition: all 0.3s ease;
+    }
+
+  &:focus {
+    border-color: #0A8817;
+    color: #FCFCFC;
+    transition: all 0.3s ease;
+    }
+
+  &:disabled {
+    border-color: #ABABAB;
+    transition: all 0.3s ease;
+    }
+  }
+
+%bg {
+
+  color: #000000;
+  background-color: #F8D24E;
+  border: 0;
+
+
+  &:hover {
+    background-color: #0A8817;
+    transition: all 0.3s ease;
+  }
+
+  &:focus {
+    background-color: #0A8817;
+    color: #FCFCFC;
+    transition: all 0.3s ease;
+  }
+
+  &:disabled {
+    background-color: #ABABAB;
+    transition: all 0.3s ease;
+  }
+}
+
+%undrln {
+
+  text-decoration: underline;
+  color: #F8D24E;
+  background-color: transparent;
+  border: 0;
+
+  &:hover {
+    color: #0A8817;
+    transition: all 0.3s ease;
+  }
+
+  &:focus {
+    color: #FCFCFC;
+    transition: all 0.3s ease;
+  }
+
+  &:disabled {
+    color: #ABABAB;
+    transition: all 0.3s ease;
+  }
+}
+
+// sizes
+
+@mixin btn-sizes($w, $h, $rad, $fsize, $lh, $pdn) {
+  width: $w;
+  height: $h;
+  border-radius: $rad;
+  font-size: $fsize;
+  line-height: $lh;
+  padding: $pdn;
+}
+
+
+.btn__border {
+  @extend %btn;
+  @extend %bg;
+  @include btn-sizes (108px, 38px, 8px, 12, 1.25, 11px 26px);
+}
+
+.btn-icon {
+fill: currentColor;
 }
