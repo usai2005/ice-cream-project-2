@@ -173,20 +173,19 @@ img {
 
 // sizes
 
-@mixin btn-sizes($w, $h, $rad, $fsize, $lh, $pdn, $fw) {
+@mixin btn-sizes($w, $h, $rad, $fsize, $lh, $pdn) {
   width: $w;
   height: $h;
   border-radius: $rad;
   font-size: $fsize;
   line-height: $lh;
   padding: $pdn;
-  font-weight: $fw;
 }
 
 .btn__border {
   @extend %btn;
   @extend %bg;
-  @include btn-sizes(108px, 38px, 8px, 12, 1.25, 11px 26px, 600);
+  @include btn-sizes(108px, 38px, 8px, 12, 1.25, 11px 26px);
 }
 
 .btn-icon {
