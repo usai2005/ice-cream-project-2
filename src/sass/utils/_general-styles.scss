@@ -182,17 +182,15 @@ img {
   padding: $pdn;
 }
 
-
 .btn-icon {
   fill: currentColor;
   margin-left: 4px;
-  
-.btn__border {
-  @extend %btn;
-  @extend %bg;
-  @include btn-sizes(108px, 38px, 8px, 12, 1.25, 11px 26px);
-}
 
+  .btn__border {
+    @extend %btn;
+    @extend %bg;
+    @include btn-sizes(108px, 38px, 8px, 12, 1.25, 11px 26px);
+  }
 }
 
 // template
@@ -203,4 +201,55 @@ img {
 //   @include btn-sizes (108px, 38px, 8px, 12, 1.25, 11px 26px);
 // }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+  background-color: $backdrop;
+  z-index: 999;
+  overflow-y: scroll;
+}
+
+.backdrop--hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  transition: color 250ms $timing-function;
+  color: getColor('primary-text');
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: getColor('accent');
+  }
+}
+
+.modal-close-icon {
+  fill: currentColor;
+}
