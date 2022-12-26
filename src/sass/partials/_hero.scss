@@ -28,7 +28,7 @@
   @include fonts(400, 26px, 1.26, 0.04em, uppercase);
   color: getColor('secondary-text');
 
-  animation: slide-to-bottom 500ms ease-out 100ms both;
+  animation: slide-to-bottom 600ms ease-out 100ms both;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
@@ -45,7 +45,7 @@
   align-items: center;
   margin-bottom: 12px;
 
-  animation: slide-to-right 1000ms ease-in-out 400ms both;
+  animation: slide-to-right 1000ms ease-in-out 600ms both;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 42px;
@@ -69,7 +69,7 @@
     display: none;
   }
   text-align: right;
-  animation: slide-to-left 1000ms ease-in-out 400ms both;
+  animation: slide-to-left 1100ms ease-in-out 600ms both;
 
   @media screen and (min-width: 1200px) {
     margin-top: 8px;
@@ -153,7 +153,7 @@
       }
     }
   }
-  animation: slide-to-top 400ms ease-out 1200ms both;
+  animation: slide-to-top 600ms ease-out 1400ms both;
 }
 
 .icecream-balls {
@@ -189,14 +189,10 @@
 
   position: absolute;
   bottom: 0;
-  right: 20%;
+  right: calc(53% - (177px / 2));
   z-index: 3;
 
-  animation: slide-to-left 1000ms ease-in-out 100ms both;
-
-  @media screen and (min-width: 480px) {
-    right: 60px;
-  }
+  animation: slide-to-left 600ms ease-out 100ms both;
 
   @media screen and (min-width: 767.9px) {
     right: 92px;
@@ -286,15 +282,18 @@
   0% {
     opacity: 0;
     transform: translateY(-80px);
+    line-height: 0.9;
   }
 
   50% {
     opacity: 0.6;
+    line-height: 1.6;
   }
 
   100% {
     opacity: 1;
     transform: translateY(0);
+    line-height: 1.26;
   }
 }
 
