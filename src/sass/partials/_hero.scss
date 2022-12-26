@@ -189,14 +189,10 @@
 
   position: absolute;
   bottom: 0;
-  right: 20%;
+  right: calc(53% - 177px / 2);
   z-index: 3;
 
   animation: slide-to-left 1000ms ease-in-out 100ms both;
-
-  @media screen and (min-width: 480px) {
-    right: 60px;
-  }
 
   @media screen and (min-width: 767.9px) {
     right: 92px;
