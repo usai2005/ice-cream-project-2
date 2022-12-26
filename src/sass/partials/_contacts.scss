@@ -220,61 +220,21 @@
 
 // contacts-button
 .contacts-button {
+  @extend %btn;
+  @include btn-sizes(196px, 42px, 10px, 14, 1.29, 12px 12px);
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 196px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  padding-right: 12px;
-
-  border: 2px solid transparent;
-  border-radius: 10px;
-
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  color: getColor('primary-text');
+  letter-spacing: normal;
 }
 
 .contacts-button--dark {
-  border-color: getColor('accent');
-  background-color: getColor('accent');
-  transition: border-color 250ms $timing-function,
-    background-color 250ms $timing-function, color 250ms $timing-function;
-
-  &:hover {
-    border-color: getColor('btn-green');
-    background-color: getColor('btn-green');
-  }
-
-  &:focus {
-    border-color: getColor('btn-green');
-    background-color: getColor('btn-green');
-    color: #ffffff;
-    outline: transparent;
-  }
+  @extend %bg;
+  color: getColor('primary-text');
 }
 
 .contacts-button--light {
-  border-color: getColor('accent');
-  background-color: transparent;
-  transition: border-color 250ms $timing-function, color 250ms $timing-function;
-
-  &:hover {
-    border-color: getColor('btn-green');
-  }
-
-  &:focus {
-    border-color: getColor('btn-green');
-    color: #ffffff;
-    outline: transparent;
-  }
+  @extend %border;
 }
 
 .contacts-button__icon {
   margin-left: 4px;
-  fill: currentColor;
 }
