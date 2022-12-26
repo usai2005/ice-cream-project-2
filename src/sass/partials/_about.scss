@@ -12,13 +12,6 @@
 }
 }
 
-.all-under-title{
-    background-color: red
-    ;
-    // @media screen and (min-width: 768px) {
-    //     display: flex;
-    //     }
-}
 
 
 
@@ -105,18 +98,26 @@ text-transform: uppercase;
   justify-content: center;
   align-items: center;
   margin-top: 62px;
-  
 
   @media screen and (min-width: 768px) {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // display: inline-block;
     margin-top: 0px;
     align-items: start;
   }
 
   @media screen and (min-width: 1200px) {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // display: inline-block;
     margin-top: 0px;
-    align-items: start;margin-bottom:86px;
+    align-items: start;
+    margin-bottom: 86px;
   }
 }
 
