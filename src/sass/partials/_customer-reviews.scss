@@ -2,8 +2,11 @@
     height: 466px;
     margin-bottom: 40px;
 
+    @media screen and (max-width: 319px) {
+      height: 600px;
+    }
+
     @media screen and (min-width: 480px) {
-      margin-bottom: 40px;
       margin-top: -845px;
     }
     
@@ -159,6 +162,10 @@
     letter-spacing: 0.04em;
 
     @media screen and (min-width: 321px) {
+      white-space: normal;
+    }
+
+    @media screen and (max-width: 319px) {
       white-space: normal;
     }
 
