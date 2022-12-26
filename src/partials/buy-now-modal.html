@@ -1,114 +1,148 @@
-<div class="modal">
-  <p class="modal__title">Buy now</p>
-  <form>
-    <ul class="modal-form">
-      <li class="modal-form__unit">
-        <div class="modal-form__checkbox">
-          <img
-            class="modal-form__image modal-form__image--green"
-            srcset="
-              ./images/modal_buy/img-1@1x.jpg 1x,
-              ./images/modal_buy/img-1@2x.jpg 2x
-            "
-            src="./images/modal_buy/img-1@1x.jpg"
-            alt="ice cream for modal"
-            width="132"
-            height="132"
-            loading="lazy"
-          />
-
-          <label class="modal-form__unit-title">
+<div class="backdrop backdrop--hidden" data-modal>
+  <div class="buy-modal">
+    <button class="modal-close-btn" data-modal-close>
+      <svg class="btn-icon" width="20" height="20">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <strong class="buy-modal__title">Buy now</strong>
+    <form class="buy-modal-form">
+      <ul class="buy-checkbox-list list">
+        <li class="buy-checkbox">
+          <label class="buy-checkbox__label">
             <input
-              class="visually-hidden modal-form__input"
+              class="visually-hidden buy-checkbox__input"
               type="checkbox"
               name="buy-now"
               value="ice cream"
             />
+            <span class="buy-checkbox__check buy-checkbox__check--green">
+              <span>ice cream</span>
+            </span>
+            <span
+              class="buy-checkbox__image-background buy-checkbox__image-background--green"
+            ></span>
 
-            ice cream
+            <img
+              class="buy-checkbox__image"
+              srcset="
+                ./images/modal_buy/img-1@1x.jpg 1x,
+                ./images/modal_buy/img-1@2x.jpg 2x
+              "
+              src="./images/modal_buy/img-1@1x.jpg"
+              alt="ice cream"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
           </label>
-        </div>
-      </li>
-      <li class="modal-form__unit">
-        <label class="modal-form__choosing">
-          <input type="checkbox" name="buy-now" value="ice coffee" />
-          ice coffee
-        </label>
-      </li>
-      <li class="modal-form__unit">
-        <label class="modal-form__choosing">
-          <input type="checkbox" name="buy-now" value="milkshake" />
-          milkshake
-        </label>
-      </li>
-    </ul>
-    <ul>
-      <li></li>
-      <li></li>
-    </ul>
-    <button type="submit">submit</button>
-  </form>
-</div>
-
-<!-- <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" data-modal-close class="modal__modal-btn">
-      <svg class="modal__close-cross" width="11" height="11">
-        <use href="./images/icons.svg#close-cross"></use>
-      </svg>
-    </button>
-
-    <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
-
-    <form>
-      <ul class="modal-form">
-        <li class="modal-form__unit">
-          <label for="name" class="modal-form__label">Ім'я</label>
-          <input type="text" name="name" id="name" class="modal-form__field" />
-          <svg class="modal-form__icon">
-            <use href="./images/icons.svg#person-form"></use>
-          </svg>
         </li>
 
-        <li class="modal-form__unit">
-          <label for="tel" class="modal-form__label">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="modal-form__field" />
-          <svg class="modal-form__icon">
-            <use href="./images/icons.svg#phone-form"></use>
-          </svg>
+        <li class="buy-checkbox">
+          <label class="buy-checkbox__label">
+            <input
+              class="visually-hidden buy-checkbox__input"
+              type="checkbox"
+              name="buy-now"
+              value="ice cream"
+            />
+            <span class="buy-checkbox__check buy-checkbox__check--yellow">
+              <span>ice coffee</span>
+            </span>
+            <span
+              class="buy-checkbox__image-background buy-checkbox__image-background--yellow"
+            ></span>
+
+            <img
+              class="buy-checkbox__image"
+              srcset="
+                ./images/modal_buy/img-2@1x.jpg 1x,
+                ./images/modal_buy/img-2@2x.jpg 2x
+              "
+              src="./images/modal_buy/img-2@1x.jpg"
+              alt="ice coffee"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+          </label>
         </li>
 
-        <li class="modal-form__unit">
-          <label for="mail" class="modal-form__label">Пошта</label>
-          <input type="email" name="mail" id="mail" class="modal-form__field" />
-          <svg class="modal-form__icon">
-            <use href="./images/icons.svg#email-form"></use>
-          </svg>
+        <li class="buy-checkbox">
+          <label class="buy-checkbox__label">
+            <input
+              class="visually-hidden buy-checkbox__input"
+              type="checkbox"
+              name="buy-now"
+              value="ice cream"
+            />
+            <span class="buy-checkbox__check buy-checkbox__check--brown">
+              <span>milkshake</span>
+            </span>
+            <span
+              class="buy-checkbox__image-background buy-checkbox__image-background--brown"
+            ></span>
+
+            <img
+              class="buy-checkbox__image"
+              srcset="
+                ./images/modal_buy/img-3@1x.jpg 1x,
+                ./images/modal_buy/img-3@2x.jpg 2x
+              "
+              src="./images/modal_buy/img-3@1x.jpg"
+              alt="milkshake"
+              width="132"
+              height="132"
+              loading="lazy"
+            />
+          </label>
         </li>
       </ul>
 
-      <div class="modal-form__textarea-unit">
-        <label for="comment" class="modal-form__label">Коментар</label>
+      <ul class="buy-form-list list">
+        <li class="buy-form-field">
+          <input
+            type="text"
+            id="user_name"
+            class="buy-form-field__input"
+            placeholder=" "
+            autocomplete="off"
+            pattern="[a-zA-Z\s]{3,}"
+            title="The entered information should contain only letters of the Latin alphabet in any case or a space."
+            required
+          />
+          <label class="buy-form-field__label" for="user_name"> Name </label>
+        </li>
+
+        <li class="buy-form-field">
+          <input
+            type="tel"
+            name="phone_number"
+            id="user_phone"
+            class="buy-form-field__input"
+            placeholder=" "
+            autocomplete="off"
+            pattern="[+]380[0-9]{9}"
+            maxlength="13"
+            title="The entered number should start with +380 and contain 13 characters."
+            required
+          />
+          <label class="buy-form-field__label" for="user_name"> Phone </label>
+        </li>
+      </ul>
+
+      <div class="buy-textarea">
         <textarea
           name="comment"
           id="comment"
-          class="modal-form__textarea-field"
-          placeholder="Введіть текст"
+          class="buy-textarea__field"
+          autocomplete="off"
+          placeholder=" "
         ></textarea>
+        <label for="comment" class="buy-textarea__label">Comment</label>
       </div>
 
-      <label class="confirmation">
-        <input class="confirmation__checkbox" type="checkbox" name="name" />
-
-        <svg class="confirmation__check-icon" width="11" height="8">
-          <use href="./images/icons.svg#check-mark"></use>
-        </svg>
-
-        Погоджуюся з розсилкою та приймаю
-        <a href="#" class="confirmation__confirm-link">Умови договору</a>
-      </label>
-
-      <button type="submit" class="modal-form__submit-btn">Відправити</button>
+      <button type="submit">submit</button>
     </form>
   </div>
-</div> -->
+</div>
