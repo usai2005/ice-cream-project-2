@@ -30,10 +30,6 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-
-  .backdrop--hidden & {
-    transform: translate(-50%, -50%) scale(0.8);
-  }
 }
 
 // modal-map styles
