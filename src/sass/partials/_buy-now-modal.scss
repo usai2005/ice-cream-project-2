@@ -417,3 +417,14 @@
     line-height: calc(20 / 14);
   }
 }
+
+.buy-btn {
+  @extend %btn;
+  @extend %bg;
+  @include btn-sizes (112px, 42px, 10px, 12, 1.25, 12px 34px);
+  color: getColor ('primaty-text');
+  @media screen and (min-width: 768px) {
+    @include btn-sizes (121px, 42px, 10px, 14, 1.23, 12px 34px);
+    color: getColor ('primaty-text');
+  }
+}
