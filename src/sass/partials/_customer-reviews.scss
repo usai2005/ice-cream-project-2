@@ -152,7 +152,7 @@
     margin-bottom: 32px;
     font-size: 12px;
     line-height: 2.55;
-    white-space: pre-line;
+    /*white-space: pre-line;*/
 
     color: #FCFCFC;
   
@@ -169,7 +169,7 @@
         line-height: 1.86;
         border-radius: 24px;
         font-weight: 500;
-        white-space: normal;
+       /* white-space: normal;*/
     }
 
     @media screen and (min-width: 1200px) {
@@ -178,6 +178,12 @@
       padding: 43px 109px;
       font-size: 16px;
     }   
+  }
+
+  .slider__txt br {
+    @media screen and (min-width: 768px) {
+      display: none;
+  }
   }
   
   @-webkit-keyframes check {
