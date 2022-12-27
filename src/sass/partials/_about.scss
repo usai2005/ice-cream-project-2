@@ -57,6 +57,7 @@
 
   @media screen and (min-width: 768px) {
     display: inline-block;
+     // Тут є невідповідність ширині для забезпечення відповідності макету
     max-width: 456px;
     font-size: 34px;
     line-height: 1.26;
@@ -69,6 +70,7 @@
 
   @media screen and (min-width: 1200px) {
     display: inline-block;
+     // Тут є невідповідність ширині для забезпечення відповідності макету
     max-width: 483px;
     font-size: 36px;
     line-height: 1.25;
