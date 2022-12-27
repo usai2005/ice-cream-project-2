@@ -1,10 +1,14 @@
 //   modal-map
 .contacts__modal-map {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   max-width: 280px;
   width: 100%;
+
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
   min-height: 365px;
   padding-top: 28px;
   padding-bottom: 28px;
