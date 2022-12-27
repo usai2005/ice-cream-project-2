@@ -1,47 +1,46 @@
-<div class="backdrop backdrop--hidden" data-modal>
-    <div class="contacts__modal-map modal-map">
-      <button class="modal-close-btn" data-modal-close>
-        <svg class="modal-close-icon" width="20" height="20">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+<div class="backdrop js-overlay-modal"></div>
+<div class="contacts__modal-map modal-map modal" data-modal="4">
+  <button class="modal-close-btn js-modal-close">
+    <svg class="modal-close-icon" width="20" height="20">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
 
-      <div class="modal-map__meta">
-        <strong class="modal-map__text">Our Locations</strong>
-      </div>
-
-      <div class="modal-map__wrapper">
-        <picture>
-          <source
-            media="(max-width: 767.98px)"
-            type="image/jpg"
-            srcset="
-              ./images/modal_map/img-1@1x.jpg 1x,
-              ./images/modal_map/img-1@2x.jpg 2x
-            "
-          />
-          <source
-            media="(min-width: 768px)"
-            type="image/jpg"
-            srcset="
-              ./images/modal_map/img-2@1x.jpg 1x,
-              ./images/modal_map/img-2@2x.jpg 2x
-            "
-          />
-          <img
-            class="modal-map__img"
-            src="./images/modal_map/img-1@1x.jpg"
-            alt="map"
-          />
-        </picture>
-      </div>
-
-      <a
-        href="https://goo.gl/maps/YGEp32zduYWbFXs4A"
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-        class="link modal-map__link"
-        >Open map</a
-      >
-    </div>
+  <div class="modal-map__meta">
+    <strong class="modal-map__text">Our Locations</strong>
   </div>
+
+  <div class="modal-map__wrapper">
+    <picture>
+      <source
+        media="(max-width: 767.98px)"
+        type="image/jpg"
+        srcset="
+          ./images/modal_map/img-1@1x.jpg 1x,
+          ./images/modal_map/img-1@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        type="image/jpg"
+        srcset="
+          ./images/modal_map/img-2@1x.jpg 1x,
+          ./images/modal_map/img-2@2x.jpg 2x
+        "
+      />
+      <img
+        class="modal-map__img"
+        src="./images/modal_map/img-1@1x.jpg"
+        alt="map"
+      />
+    </picture>
+  </div>
+
+  <a
+    href="https://goo.gl/maps/YGEp32zduYWbFXs4A"
+    target="_blank"
+    rel="noopener noreferrer nofollow"
+    class="link modal-map__link"
+    >Open map</a
+  >
+</div>

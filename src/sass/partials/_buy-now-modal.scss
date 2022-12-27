@@ -1,3 +1,9 @@
+// BACKDROP + MODAL WINDOW
+
+.backdrop--hidden {
+  transform: scale(0.8);
+}
+
 .buy-modal {
   position: absolute;
 
@@ -7,10 +13,17 @@
 
   align-items: center;
 
+  top: 0;
+
   left: 50%;
 
   width: 280px;
   height: 991px;
+
+  z-index: 1050;
+
+  opacity: 0;
+  visibility: hidden;
 
   background-color: getColor('secondary-text');
 
@@ -27,7 +40,7 @@
     top: 50%;
     left: 50%;
 
-    transform: translate(-50% -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
 
     width: 568px;
     height: 644px;
@@ -51,6 +64,8 @@
   }
 }
 
+// FORM
+
 .buy-modal-form {
   display: flex;
 
@@ -58,6 +73,8 @@
 
   align-items: center;
 }
+
+// CUSTOM CHECKBOXES
 
 .buy-checkbox-list {
   display: flex;
@@ -144,22 +161,37 @@
   border: 2px solid getColor('brown');
 }
 
-.buy-checkbox__input:checked + .buy-checkbox__check--green,
-.buy-checkbox__input:focus + .buy-checkbox__check--green {
+.buy-checkbox__input--green:checked + .buy-checkbox__check--green,
+.buy-checkbox__input--green:focus + .buy-checkbox__check--green {
   transition: background-color 250ms $timing-function;
   background-color: getColor('modal-border-green');
 }
 
-.buy-checkbox__input:checked + .buy-checkbox__check--yellow,
-.buy-checkbox__input:focus + .buy-checkbox__check--yellow {
+.buy-checkbox__input--green:not(:checked) + .buy-checkbox__check--green {
+  transition: background-color 250ms $timing-function;
+  background-color: transparent;
+}
+
+.buy-checkbox__input--yellow:checked + .buy-checkbox__check--yellow,
+.buy-checkbox__input--yellow:focus + .buy-checkbox__check--yellow {
   transition: background-color 250ms $timing-function;
   background-color: getColor('beige');
 }
 
-.buy-checkbox__input:checked + .buy-checkbox__check--brown,
-.buy-checkbox__input:focus + .buy-checkbox__check--brown {
+.buy-checkbox__input--yellow:not(:checked) + .buy-checkbox__check--yellow {
+  transition: background-color 250ms $timing-function;
+  background-color: transparent;
+}
+
+.buy-checkbox__input--brown:checked + .buy-checkbox__check--brown,
+.buy-checkbox__input--brown:focus + .buy-checkbox__check--brown {
   transition: background-color 250ms $timing-function;
   background-color: getColor('brown');
+}
+
+.buy-checkbox__input--brown:not(:checked) + .buy-checkbox__check--brown {
+  transition: background-color 250ms $timing-function;
+  background-color: transparent;
 }
 
 .buy-checkbox__image-background {
@@ -182,8 +214,6 @@
   height: 132px;
 
   border-radius: 50%;
-
-  // transform: translateY(-50%);
 }
 
 .buy-checkbox__image-background--green {
@@ -200,6 +230,8 @@
   background-color: rgba(213, 117, 63, 0.7);
   box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
 }
+
+// FORM INPUTS & TEXTAREA
 
 .buy-form-list {
   display: flex;
