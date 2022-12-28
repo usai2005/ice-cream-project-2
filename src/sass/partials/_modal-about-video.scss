@@ -16,7 +16,8 @@
   padding-left: 28px;
   padding-right: 28px;
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 400ms $timing-function;
+  transition: transform 400ms $timing-function, opacity 400ms $timing-function, visibility 400ms $timing-function;
+
 
   border: 2px solid getColor('accent');
   border-radius: 10px;

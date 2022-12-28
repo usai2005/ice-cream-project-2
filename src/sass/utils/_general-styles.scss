@@ -212,7 +212,7 @@ img {
   visibility: hidden;
 
   pointer-events: initial;
-  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+  transition: opacity 400ms $timing-function, visibility 400ms $timing-function;
   background-color: $backdrop;
   z-index: 999;
   overflow-y: scroll;
