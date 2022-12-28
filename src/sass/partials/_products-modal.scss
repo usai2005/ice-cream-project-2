@@ -495,3 +495,14 @@
     line-height: calc(20 / 14);
   }
 }
+
+.prod-sub-btn {
+  @extend %btn;
+  @extend %bg;
+  @include btn-sizes (132px, 42px, 10px, 14, 1.23, 12px 32px);
+  color: getColor ('primaty-text');
+
+  @media screen and (min-width: 768px) {
+    @include btn-sizes (121px, 42px, 10px, 14, 1.23, 12px 34px);
+  }
+}
