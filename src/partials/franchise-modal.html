@@ -1,15 +1,21 @@
 <!-- BACKDROP + MODAL WINDOW + CLOSE BTN -->
 
 <div class="backdrop js-overlay-modal"></div>
-<div class="franchise-modal modal" data-modal="5">
+<div class="franchise-modal modal" data-modal="7">
   <button class="modal-close-btn js-modal-close">
     <svg class="btn-icon" width="20" height="20">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
-  <strong class="franchise-modal__title"
-    >Thank you for your interest in owning an Ice Cream shop</strong
+
+  <strong class="franchise-modal__title franchise-modal__title--mobile"
+    >Thank you for your<br />interest in owning<br />an Ice Cream shop</strong
   >
+
+  <strong class="franchise-modal__title franchise-modal__title--table"
+    >Thank you for your<br />interest in owning an<br />Ice Cream shop</strong
+  >
+
   <p class="franchise-text">
     Due to the overwhelming volume of franchise requests we are not accepting
     new franchisee applications at this time. Once the application process
@@ -51,7 +57,7 @@
           title="The entered number should start with +380 and contain 13 characters."
           required
         />
-        <label class="franchise-form-field__label" for="user_name">
+        <label class="franchise-form-field__label" for="user_phone">
           Phone
         </label>
       </li>
