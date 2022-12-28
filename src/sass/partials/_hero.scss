@@ -65,7 +65,7 @@
 }
 
 .outlet {
-  @media screen and (max-width: 767.9px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
   text-align: right;
@@ -125,7 +125,7 @@
 // -------------- hero bottom line ------------------
 
 .hero__content {
-  @media screen and (max-width: 767.9px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
@@ -189,25 +189,40 @@
 
   position: absolute;
   bottom: 0;
-  right: calc(53% - 177px / 2);
+  right: calc(50% - 177px / 2);
+  // right: 62px;
   z-index: 3;
 
   animation: slide-to-left 1000ms ease-in-out 100ms both;
 
-  @media screen and (min-width: 767.9px) {
+  @media screen and (min-width: 768px) {
     right: 92px;
   }
 }
 
 .bg-image-dots {
-  display: block;
-  width: 100%;
-  height: auto;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   z-index: -1;
+  bottom: 0;
+
+  @media screen and (max-width: 767.9px) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 768px;
+    transform: translateX(-32px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  // left: 0;
+  // right: 0;
 }
 
 // -------- button back to up --------------
