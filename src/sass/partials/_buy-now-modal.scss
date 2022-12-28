@@ -1,20 +1,23 @@
 // BACKDROP + MODAL WINDOW
 
 .buy-modal {
-  position: absolute;
+  position: fixed;
 
+  overflow-y: scroll;
   display: flex;
 
   flex-direction: column;
 
   align-items: center;
 
-  top: 0;
+  top: 50%;
 
   left: 50%;
 
   width: 280px;
-  height: 991px;
+  max-height: 991px;
+
+  height: calc(100vh - 20px);
 
   z-index: 1050;
 
@@ -27,21 +30,23 @@
 
   border-radius: 10px;
 
-  transform: translateX(-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 400ms $timing-function;
 
   padding: 28px 28px 29px;
 
   @media screen and (min-width: 768px) {
     top: 50%;
+
     left: 50%;
 
     transform: translate(-50%, -50%) scale(1);
 
     width: 568px;
-    height: 644px;
+    max-height: 644px;
+    height: calc(100vh - 30px);
 
-    padding: 32px 54px;
+    padding: 32px 51px;
   }
 }
 
@@ -204,7 +209,7 @@
 .buy-checkbox__image {
   position: absolute;
 
-  display: block;
+  // display: block;
 
   max-width: 132px;
   height: 132px;
@@ -246,7 +251,7 @@
 }
 
 .buy-form-field__input {
-  width: 224px;
+  width: 220px;
   height: 32px;
 
   border: 1px solid getColor('bg-color');
@@ -353,7 +358,7 @@
   border-radius: 10px;
   background-color: rgba(248, 210, 78, 0.1);
   outline: none;
-  width: 224px;
+  width: 220px;
   height: 65px;
 
   font-size: 12px;
@@ -421,10 +426,10 @@
 .buy-btn {
   @extend %btn;
   @extend %bg;
-  @include btn-sizes (112px, 42px, 10px, 12, 1.25, 12px 34px);
+  @include btn-sizes(112px, 42px, 10px, 12, 1.25, 12px 34px);
   color: getColor ('primaty-text');
   @media screen and (min-width: 768px) {
-    @include btn-sizes (121px, 42px, 10px, 14, 1.23, 12px 34px);
+    @include btn-sizes(121px, 42px, 10px, 14, 1.23, 12px 34px);
     color: getColor ('primaty-text');
   }
 }
