@@ -167,11 +167,14 @@ input.slider__nav:nth-of-type(3) {
   z-index: 0;
   display: none;
   text-align: center; 
+  margin-top: 15px;
+
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     line-height: 50px;
     font-size: 50px;
   }
+
   @media screen and (min-width: 1200px) {
     line-height: 50px;
     font-size: 50px;
