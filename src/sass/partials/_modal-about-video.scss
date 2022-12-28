@@ -50,17 +50,17 @@
   }
 }
 
-// .video-about-modal__iframe {
-//   margin-bottom: 20px;
-//   width: 224px;
-//   height: 199px;
+ .video-about-modal__iframe {
+   margin-bottom: 20px;
+   width: 224px;
+   height: 199px;
 
-//   @media screen and (min-width: 768px) {
-//     margin-bottom: 32px;
-//     width: 448px;
-//     height: 205px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+     margin-bottom: 32px;
+     width: 448px;
+     height: 205px;
+   }
+
 
 .iframe-wrapper {
   border-radius: 10px;
