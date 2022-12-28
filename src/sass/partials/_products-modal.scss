@@ -486,7 +486,8 @@
 }
 
 .products-form-textarea__field:focus + .products-form-textarea__label,
-.products-form-textarea__field:not(:placeholder-shown) + .buy-textarea__label {
+.products-form-textarea__field:not(:placeholder-shown)
+  + .products-form-textarea__label {
   font-size: 12px;
   transform: translateY(-27px);
   transition: transform 250ms $timing-function;
