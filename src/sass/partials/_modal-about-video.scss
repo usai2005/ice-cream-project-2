@@ -15,8 +15,8 @@
   padding-bottom: 28px;
   padding-left: 28px;
   padding-right: 28px;
-  transform: translate(-50%, -50%) scale(1);
-  @include transition(transform);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 400ms $timing-function;
 
   border: 2px solid getColor('accent');
   border-radius: 10px;
@@ -30,6 +30,10 @@
     padding-bottom: 32px;
     padding-left: 60px;
     padding-right: 60px;
+  }
+
+  .backdrop.active ~ & {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 

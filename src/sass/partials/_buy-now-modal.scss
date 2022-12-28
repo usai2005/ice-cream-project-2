@@ -30,7 +30,7 @@
 
   border-radius: 10px;
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0);
   transition: transform 400ms $timing-function;
 
   padding: 28px 28px 29px;
@@ -41,6 +41,10 @@
     height: calc(100vh - 30px);
 
     padding: 32px 51px;
+  }
+
+  .backdrop.active ~ & {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
