@@ -33,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
     closeButtons = document.querySelectorAll('.js-modal-close'),
     body = document.querySelector('body');
 
+  const videos = document.querySelectorAll('iframe');
+
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
     /* Назначаем каждой кнопке обработчик клика */
@@ -64,6 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
       document.querySelector('body').classList.remove('modal-open');
+      videos.forEach(i => {
+        const source = i.src;
+        i.src = '';
+        i.src = source;
+      });
     });
   }); // end foreach
 
@@ -76,6 +83,11 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.modal.active').classList.remove('active');
         overlay.classList.remove('active');
         document.querySelector('body').classList.remove('modal-open');
+        videos.forEach(i => {
+          const source = i.src;
+          i.src = '';
+          i.src = source;
+        });
       }
     },
     false
@@ -85,5 +97,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.modal.active').classList.remove('active');
     document.querySelector('body').classList.remove('modal-open');
     this.classList.remove('active');
+    videos.forEach(i => {
+      const source = i.src;
+      i.src = '';
+      i.src = source;
+    });
   });
 }); // end ready
