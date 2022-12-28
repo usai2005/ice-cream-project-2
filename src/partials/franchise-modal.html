@@ -31,7 +31,7 @@
       <li class="franchise-form-field">
         <input
           type="text"
-          id="user_name"
+          id="franchise-user_name"
           class="franchise-form-field__input"
           placeholder=" "
           autocomplete="off"
@@ -39,7 +39,7 @@
           title="The entered information should contain only letters of the Latin alphabet in any case or a space."
           required
         />
-        <label class="franchise-form-field__label" for="user_name">
+        <label class="franchise-form-field__label" for="franchise-user_name">
           Name
         </label>
       </li>
@@ -48,7 +48,7 @@
         <input
           type="tel"
           name="phone_number"
-          id="user_phone"
+          id="franchise-user_phone"
           class="franchise-form-field__input"
           placeholder=" "
           autocomplete="off"
@@ -57,7 +57,7 @@
           title="The entered number should start with +380 and contain 13 characters."
           required
         />
-        <label class="franchise-form-field__label" for="user_phone">
+        <label class="franchise-form-field__label" for="franchise-user_phone">
           Phone
         </label>
       </li>
@@ -66,7 +66,7 @@
         <input
           type="email"
           name="email"
-          id="user_email"
+          id="franchise-user_email"
           class="franchise-form-field__input"
           placeholder=" "
           autocomplete="off"
@@ -74,7 +74,7 @@
           title="The entered email should match the format name@mail.net"
           required
         />
-        <label class="franchise-form-field__label" for="user_email">
+        <label class="franchise-form-field__label" for="franchise-user_email">
           Email
         </label>
       </li>
@@ -83,12 +83,14 @@
     <div class="franchise-textarea">
       <textarea
         name="comment"
-        id="comment"
+        id="franchise-comment"
         class="franchise-textarea__field"
         autocomplete="off"
         placeholder=" "
       ></textarea>
-      <label for="comment" class="franchise-textarea__label">Comment</label>
+      <label for="franchise-comment" class="franchise-textarea__label"
+        >Comment</label
+      >
     </div>
 
     <button class="modal-franchise-submit-button" type="submit">Submit</button>
