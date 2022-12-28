@@ -19,7 +19,7 @@
 
   height: calc(100vh - 20px);
 
-  max-height: 674px;
+  max-height: 686px;
 
   z-index: 1050;
 
@@ -41,7 +41,7 @@
     padding: 32px 60px;
 
     width: 568px;
-    max-height: 668px;
+    max-height: 680px;
     height: calc(100vh - 30px);
   }
 
@@ -112,14 +112,14 @@
 
   align-items: center;
 
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
-  gap: 12px;
+  gap: 16px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 
-    gap: 16px;
+    gap: 20px;
   }
 }
 
@@ -206,15 +206,15 @@
 .franchise-form-field__input:focus + .franchise-form-field__label,
 .franchise-form-field__input:not(:placeholder-shown)
   + .franchise-form-field__label {
-  font-size: 12px;
+  font-size: 14px;
   line-height: calc(17 / 12);
 
-  transform: translateY(-21px);
+  transform: translateY(-25px);
 
   transition: transform 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
-    transform: translateY(-28px);
+    transform: translateY(-30px);
 
     font-size: 14px;
 
@@ -267,7 +267,7 @@
 
 .franchise-textarea__label {
   position: absolute;
-  font-size: 12px;
+  font-size: 14px;
 
   line-height: calc(16.8 / 12);
   color: getColor('primary-text');
@@ -291,11 +291,11 @@
 .franchise-textarea__field:not(:placeholder-shown)
   + .franchise-textarea__label {
   font-size: 12px;
-  transform: translateY(-23px);
+  transform: translateY(-24px);
   transition: transform 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
-    transform: translateY(-28px);
+    transform: translateY(-30px);
 
     font-size: 14px;
 
