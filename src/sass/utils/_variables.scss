@@ -26,6 +26,7 @@ $colors: (
   'btn-brown': #88470a,
   'line-color': #e1e1e1,
   'red': #ff0000,
+  'composition-color': #9cbe8f,
 );
 @function getColor($key) {
   @return map-get($colors, $key);

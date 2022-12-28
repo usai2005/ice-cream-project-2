@@ -1,15 +1,21 @@
 <!-- BACKDROP + MODAL WINDOW + CLOSE BTN -->
 
 <div class="backdrop js-overlay-modal"></div>
-<div class="franchise-modal modal" data-modal="5">
+<div class="franchise-modal modal" data-modal="7">
   <button class="modal-close-btn js-modal-close">
     <svg class="btn-icon" width="20" height="20">
       <use href="./images/icons.svg#icon-close"></use>
     </svg>
   </button>
-  <strong class="franchise-modal__title"
-    >Thank you for your interest in owning an Ice Cream shop</strong
+
+  <strong class="franchise-modal__title franchise-modal__title--mobile"
+    >Thank you for your<br />interest in owning<br />an Ice Cream shop</strong
   >
+
+  <strong class="franchise-modal__title franchise-modal__title--table"
+    >Thank you for your<br />interest in owning an<br />Ice Cream shop</strong
+  >
+
   <p class="franchise-text">
     Due to the overwhelming volume of franchise requests we are not accepting
     new franchisee applications at this time. Once the application process
@@ -25,7 +31,7 @@
       <li class="franchise-form-field">
         <input
           type="text"
-          id="user_name"
+          id="franchise-user_name"
           class="franchise-form-field__input"
           placeholder=" "
           autocomplete="off"
@@ -33,7 +39,7 @@
           title="The entered information should contain only letters of the Latin alphabet in any case or a space."
           required
         />
-        <label class="franchise-form-field__label" for="user_name">
+        <label class="franchise-form-field__label" for="franchise-user_name">
           Name
         </label>
       </li>
@@ -42,7 +48,7 @@
         <input
           type="tel"
           name="phone_number"
-          id="user_phone"
+          id="franchise-user_phone"
           class="franchise-form-field__input"
           placeholder=" "
           autocomplete="off"
@@ -51,7 +57,7 @@
           title="The entered number should start with +380 and contain 13 characters."
           required
         />
-        <label class="franchise-form-field__label" for="user_name">
+        <label class="franchise-form-field__label" for="franchise-user_phone">
           Phone
         </label>
       </li>
@@ -60,7 +66,7 @@
         <input
           type="email"
           name="email"
-          id="user_email"
+          id="franchise-user_email"
           class="franchise-form-field__input"
           placeholder=" "
           autocomplete="off"
@@ -68,7 +74,7 @@
           title="The entered email should match the format name@mail.net"
           required
         />
-        <label class="franchise-form-field__label" for="user_email">
+        <label class="franchise-form-field__label" for="franchise-user_email">
           Email
         </label>
       </li>
@@ -77,12 +83,14 @@
     <div class="franchise-textarea">
       <textarea
         name="comment"
-        id="comment"
+        id="franchise-comment"
         class="franchise-textarea__field"
         autocomplete="off"
         placeholder=" "
       ></textarea>
-      <label for="comment" class="franchise-textarea__label">Comment</label>
+      <label for="franchise-comment" class="franchise-textarea__label"
+        >Comment</label
+      >
     </div>
 
     <button class="modal-franchise-submit-button" type="submit">Submit</button>

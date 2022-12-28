@@ -1,0 +1,209 @@
+<!-- <div class="products-modal-bg"> -->
+
+<div class="backdrop js-overlay-modal"></div>
+<div class="products-modal products-modal--green modal" data-modal="2">
+  <button class="modal-close-btn js-modal-close">
+    <svg class="btn-icon" width="20" height="20">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+
+  <!-- BACKDROP + MODAL WINDOW + CLOSE BTN -->
+
+  <pre class="products-modal__title">
+Chololate
+icecream</pre
+  >
+
+  <!-- PICTURE -->
+  <div class="products-modal-image">
+    <div
+      class="products-modal-image__picture-bg products-modal-image__picture-bg--green"
+    ></div>
+
+    <img
+      class="products-modal-image__image"
+      srcset="
+        ./images/modal_product/img-1@1x.jpg 1x,
+        ./images/modal_product/img-1@2x.jpg 2x
+      "
+      src="./images/modal_product/img-1@1x.jpg"
+      alt="chololate ice cream"
+      width="132"
+      height="132"
+      loading="lazy"
+    />
+  </div>
+
+  <!-- PRODUCTS-COMPOSITION -->
+
+  <ul class="products-modal-composition list">
+    <li
+      class="products-modal-composition__unit products-modal-composition__unit--green"
+    >
+      <div
+        class="products-modal-composition__circle products-modal-composition__circle-green"
+      >
+        <p class="products-modal-composition__amount">320</p>
+      </div>
+      <div class="products-modal-composition__name-container">
+        <p class="products-modal-composition__name">kcal</p>
+      </div>
+    </li>
+
+    <li
+      class="products-modal-composition__unit products-modal-composition__unit--green"
+    >
+      <div
+        class="products-modal-composition__circle products-modal-composition__circle-green"
+      >
+        <p class="products-modal-composition__amount">4g</p>
+      </div>
+      <div class="products-modal-composition__name-container">
+        <p class="products-modal-composition__name">Proteins</p>
+      </div>
+    </li>
+
+    <li
+      class="products-modal-composition__unit products-modal-composition__unit--green"
+    >
+      <div
+        class="products-modal-composition__circle products-modal-composition__circle-green"
+      >
+        <p class="products-modal-composition__amount">8,2g</p>
+      </div>
+      <div class="products-modal-composition__name-container">
+        <p class="products-modal-composition__name">Fats</p>
+      </div>
+    </li>
+    <li
+      class="products-modal-composition__unit products-modal-composition__unit--green"
+    >
+      <div
+        class="products-modal-composition__circle products-modal-composition__circle-green"
+      >
+        <p class="products-modal-composition__amount">40,4g</p>
+      </div>
+      <div class="products-modal-composition__name-container">
+        <p class="products-modal-composition__name">Carbs</p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- INGREDIENTS -->
+
+  <div class="products-modal-ingredients">
+    <p class="products-modal-ingredients__title">Ingredients</p>
+    <div class="products-modal-ingredients__table">
+      <ul
+        class="products-modal-ingredients__column products-modal-ingredients__column--left list"
+      >
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">Milk</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">Belgian chocolate</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">Cream</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">Cocoa powder</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">Sugar</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">Vanilla sugar</p>
+        </li>
+      </ul>
+      <ul
+        class="products-modal-ingredients__column products-modal-ingredients__column--right list"
+      >
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">100ml</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">20g</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">150 ml</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">30g</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">40g</p>
+        </li>
+        <li class="products-modal-ingredients__text-wrap">
+          <p class="products-modal-ingredients__text">10g</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FORM -->
+
+  <form class="products-form">
+    <!-- INPUTS & TEXTAREA -->
+
+    <ul class="products-form__list list">
+      <li class="products-form-field">
+        <input
+          type="text"
+          id="green-products-user_name"
+          class="products-form-field__input"
+          placeholder=" "
+          autocomplete="off"
+          pattern="[a-zA-Z\s]{3,}"
+          title="The entered information should contain only letters of the Latin alphabet in any case or a space."
+          required
+        />
+        <label
+          class="products-form-field__label"
+          for="green-products-user_name"
+        >
+          Name
+        </label>
+      </li>
+
+      <li class="products-form-field">
+        <input
+          type="tel"
+          name="phone_number"
+          id="green-products-user_phone"
+          class="products-form-field__input"
+          placeholder=" "
+          autocomplete="off"
+          pattern="[+]380[0-9]{9}"
+          maxlength="13"
+          title="The entered number should start with +380 and contain 13 characters."
+          required
+        />
+        <label
+          class="products-form-field__label"
+          for="green-products-user_phone"
+        >
+          Phone
+        </label>
+      </li>
+    </ul>
+
+    <div class="products-form-textarea">
+      <textarea
+        name="comment"
+        id="green-products-comment"
+        class="products-form-textarea__field"
+        autocomplete="off"
+        placeholder=" "
+      ></textarea>
+      <label for="green-products-comment" class="products-form-textarea__label"
+        >Comment</label
+      >
+    </div>
+
+    <!-- SUBMIT BTN -->
+
+    <button type="submit">submit</button>
+  </form>
+</div>
