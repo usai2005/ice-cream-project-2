@@ -138,14 +138,28 @@
       border-radius: 50%;
 
       background-color: #d9d9d9;
-      background-image: url('../../src/images/products/img-1_200.jpg'),
+      background-image: url('../../src/images/products/img-1_200.png'),
         linear-gradient(
           0deg,
           rgba(156, 190, 143, 0.7),
           rgba(156, 190, 143, 0.7)
         );
+      background-size: contain;
       box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
       background-repeat: no-repeat;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../../src/images/products/img-1_400.png'),
+          linear-gradient(
+            0deg,
+            rgba(156, 190, 143, 0.7),
+            rgba(156, 190, 143, 0.7)
+          );
+      }
 
       @media screen and (min-width: 768px) {
         bottom: 78%;
@@ -156,13 +170,26 @@
         height: 318px;
         bottom: 75%;
 
-        background-image: url('../../src/images/products/img-1_302.jpg'),
+        background-image: url('../../src/images/products/img-1_302.png'),
           linear-gradient(
             0deg,
             rgba(156, 190, 143, 0.7),
             rgba(156, 190, 143, 0.7)
           );
         box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-webkit-min-device-pixel-ratio: 2),
+          screen and (-o-min-device-pixel-ratio: 2/1),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../../src/images/products/img-1_604.png'),
+            linear-gradient(
+              0deg,
+              rgba(156, 190, 143, 0.7),
+              rgba(156, 190, 143, 0.7)
+            );
+        }
       }
     }
   }
@@ -180,10 +207,25 @@
       border-radius: 50%;
 
       background-color: #d9d9d9;
-      background-image: url('../../src/images/products/img-2_200.jpg'),
+      background-image: url('../../src/images/products/img-2_200.png'),
         linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7));
       box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+      background-size: contain;
       background-repeat: no-repeat;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../../src/images/products/img-2_400.png'),
+          linear-gradient(
+            0deg,
+            rgba(248, 210, 78, 0.7),
+            rgba(248, 210, 78, 0.7)
+          );
+        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+      }
 
       @media screen and (min-width: 768px) {
         bottom: 78%;
@@ -194,13 +236,26 @@
         height: 318px;
         bottom: 75%;
 
-        background-image: url('../../src/images/products/img-2_302.jpg'),
+        background-image: url('../../src/images/products/img-2_302.png'),
           linear-gradient(
             0deg,
             rgba(248, 210, 78, 0.7),
             rgba(248, 210, 78, 0.7)
           );
         box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-webkit-min-device-pixel-ratio: 2),
+          screen and (-o-min-device-pixel-ratio: 2/1),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../../src/images/products/img-2_604.png'),
+            linear-gradient(
+              0deg,
+              rgba(248, 210, 78, 0.7),
+              rgba(248, 210, 78, 0.7)
+            );
+        }
       }
     }
   }
@@ -218,10 +273,24 @@
       border-radius: 50%;
 
       background-color: #d9d9d9;
-      background-image: url('../../src/images/products/img-3_200.jpg'),
+      background-image: url('../../src/images/products/img-3_200.png'),
         linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7));
       box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+      background-size: contain;
       background-repeat: no-repeat;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../../src/images/products/img-3_400.png'),
+          linear-gradient(
+            0deg,
+            rgba(213, 117, 63, 0.7),
+            rgba(213, 117, 63, 0.7)
+          );
+      }
 
       @media screen and (min-width: 768px) {
         bottom: 78%;
@@ -232,13 +301,26 @@
         height: 318px;
         bottom: 75%;
 
-        background-image: url('../../src/images/products/img-3_302.jpg'),
+        background-image: url('../../src/images/products/img-3_302.png'),
           linear-gradient(
             0deg,
             rgba(213, 117, 63, 0.7),
             rgba(213, 117, 63, 0.7)
           );
         box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (-webkit-min-device-pixel-ratio: 2),
+          screen and (-o-min-device-pixel-ratio: 2/1),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../../src/images/products/img-3_604.png'),
+            linear-gradient(
+              0deg,
+              rgba(213, 117, 63, 0.7),
+              rgba(213, 117, 63, 0.7)
+            );
+        }
       }
     }
   }
@@ -288,4 +370,46 @@
   margin-top: auto;
 
   cursor: pointer;
+
+  &:hover .arrow-black--to-green,
+  &:focus .arrow-black--to-green {
+    fill: getColor('btn-green');
+  }
+
+  &:hover .arrow-black--to-yellow,
+  &:focus .arrow-black--to-yellow {
+    fill: getColor('btn-yellow');
+  }
+
+  &:hover .arrow-black--to-brown,
+  &:focus .arrow-black--to-brown {
+    fill: getColor('btn-brown');
+  }
+
+  &:hover .arrow-black--to-green.pulse,
+  &:hover .arrow-black--to-yellow.pulse,
+  &:hover .arrow-black--to-brown.pulse {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.arrow {
+  &-black {
+    color: getColor('primary-text');
+    fill: getColor('primary-text');
+    @include transition(fill);
+  }
 }

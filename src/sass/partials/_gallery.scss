@@ -1,22 +1,16 @@
 .section-gallery {
     display: flex;
     justify-content: center;
-   /* margin-bottom: 80px;*/
-    
-
-    @media screen and (min-width: 480px) {
-        /*width: 480px;*/
-       /* margin-bottom: 80px;*/
-    }
-      
+    margin-bottom: 80px;
+          
     @media screen and (min-width: 768px) {
       /*  width: 704px;*/
-       /* margin-bottom: 100px;*/
+       margin-bottom: 100px;
     }
   
     @media screen and (min-width: 1200px) {
        /* width: 1013px;*/
-        /*margin-bottom: 140px;*/
+        margin-bottom: 140px;
     }
 
 }
@@ -25,7 +19,6 @@
   margin-top: 32px;
   background: url('/src/images/background/backrgound_mob@1x.png');
   background-color: #Ffffff;
-  background-attachment: local;
   background-repeat: repeat;
   background-size: 320px;
 
@@ -52,7 +45,7 @@
     }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     background-size: 480px;
     height: 1069px;
     margin-top: 32px;
@@ -95,8 +88,7 @@
     
      @media screen and (min-width: 1200px) {
         margin-top: -98px;
-      
-     }
+      }
 
 
     position:relative; 
@@ -125,18 +117,22 @@
     position:absolute; 
     width: 280px;
     border-radius: 8px;
+    height: 130px;
 
     @media screen and (min-width: 480px) {
         width: 480px;
+        height: 183px;
     }
       
     @media screen and (min-width: 768px) {
         width: 704px;
+        height: 327px;
         border-radius: 18px;
     }
   
     @media screen and (min-width: 1200px) {
         width: 1013px;
+        height: 422px;
         border-radius: 24px;
     } 
     top: 0;

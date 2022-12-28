@@ -113,47 +113,49 @@
       <li class="buy-form-field">
         <input
           type="text"
-          id="user_name"
+          id="buy-user_name"
           class="buy-form-field__input"
-          placeholder=" "
+          placeholder="U+200E"
           autocomplete="off"
           pattern="[a-zA-Z\s]{3,}"
           title="The entered information should contain only letters of the Latin alphabet in any case or a space."
           required
         />
-        <label class="buy-form-field__label" for="user_name"> Name </label>
+        <label class="buy-form-field__label" for="buy-user_name"> Name </label>
       </li>
 
       <li class="buy-form-field">
         <input
           type="tel"
           name="phone_number"
-          id="user_phone"
+          id="buy-user_phone"
           class="buy-form-field__input"
-          placeholder=" "
+          placeholder="U+200E"
           autocomplete="off"
           pattern="[+]380[0-9]{9}"
           maxlength="13"
           title="The entered number should start with +380 and contain 13 characters."
           required
         />
-        <label class="buy-form-field__label" for="user_name"> Phone </label>
+        <label class="buy-form-field__label" for="buy-user_phone">
+          Phone
+        </label>
       </li>
     </ul>
 
     <div class="buy-textarea">
       <textarea
         name="comment"
-        id="comment"
+        id="buy-comment"
         class="buy-textarea__field"
         autocomplete="off"
-        placeholder=" "
+        placeholder="U+200E"
       ></textarea>
-      <label for="comment" class="buy-textarea__label">Comment</label>
+      <label for="buy-comment" class="buy-textarea__label">Comment</label>
     </div>
 
     <!-- SUBMIT BTN -->
 
-    <button type="submit">submit</button>
+    <button class="buy-btn" type="submit">Submit</button>
   </form>
 </div>

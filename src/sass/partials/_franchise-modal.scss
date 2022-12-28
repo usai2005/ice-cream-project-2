@@ -3,18 +3,23 @@
 .franchise-modal {
   position: fixed;
 
+  overflow-y: scroll;
+
   display: flex;
 
   flex-direction: column;
 
   align-items: center;
 
-  top: 0;
+  top: 50%;
 
   left: 50%;
 
   width: 280px;
-  // height: 674px;
+
+  height: calc(100vh - 20px);
+
+  max-height: 674px;
 
   z-index: 1050;
 
@@ -27,20 +32,21 @@
 
   border-radius: 10px;
 
-  transform: translateX(-50%) scale(1);
+  transform: translate(-50%, -50%) scale(0);
   transition: transform 400ms $timing-function;
 
-  padding: 28px 30px 28px 28px;
+  padding: 28px;
 
   @media screen and (min-width: 768px) {
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%) scale(1);
+    padding: 32px 60px;
 
     width: 568px;
-    height: 668px;
+    max-height: 668px;
+    height: calc(100vh - 30px);
+  }
 
+  .backdrop.active ~ & {
+    transform: translate(-50%, -50%) scale(1);
   }
 }
 
@@ -49,19 +55,30 @@
   color: getColor('primary-text');
 
   line-height: calc(24 / 16);
+  letter-spacing: initial;
 
   margin-bottom: 20px;
   text-align: center;
-    // Тут є невідповідність ширині для забезпечення відповідності макету
-  width: 226px;
 
+  white-space: pre;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
+
     margin-bottom: 24px;
-    width: 322px;
-    
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .franchise-modal__title--table {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .franchise-modal__title--mobile {
+    display: none;
   }
 }
 
@@ -69,14 +86,12 @@
   font-size: 14px;
   line-height: calc(19.6 / 14);
   margin-bottom: 24px;
-  letter-spacing: normal;
-  display: inline-block;
+  letter-spacing: initial;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: calc(22 / 16);
     margin-bottom: 32px;
-    width: 448px;
   }
 }
 
@@ -88,8 +103,6 @@
   flex-direction: column;
 
   align-items: center;
-  margin-bottom: 0px;
-
 }
 
 .franchise-form-list {
@@ -99,16 +112,14 @@
 
   align-items: center;
 
-
   margin-bottom: 12px;
 
   gap: 12px;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
 
-  margin-bottom: 16px;
-
-  gap: 16px;
+    gap: 16px;
   }
 }
 
@@ -203,9 +214,9 @@
   transition: transform 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
-    transform: translateY(-25px);
+    transform: translateY(-28px);
 
-    font-size: 13px;
+    font-size: 14px;
 
     line-height: calc(20 / 14);
   }
@@ -284,29 +295,27 @@
   transition: transform 250ms $timing-function;
 
   @media screen and (min-width: 768px) {
-    transform: translateY(-26px);
+    transform: translateY(-28px);
 
-    font-size: 13px;
+    font-size: 14px;
 
     line-height: calc(20 / 14);
   }
 }
 
-
-// кнопка
+// BUTTON
 .modal-franchise-submit-button {
-    display: inline-block;
-    @extend %btn;
-    @extend %bg;
-    @include btn-sizes(114px, 42px, 10px, 12, 1.25, 12px 12px);
-    display: inline-flex;
-    color: getColor('primary-text');
-    letter-spacing: normal;
-  
-    @media screen and (min-width: 768px) {
-      width: 121px;
-      font-size: 14px;
-      line-height: calc(17 / 14);
-    }
-  }
+  display: inline-block;
+  @extend %btn;
+  @extend %bg;
+  @include btn-sizes(114px, 42px, 10px, 12, 1.25, 12px 12px);
+  display: inline-flex;
+  color: getColor('primary-text');
+  letter-spacing: normal;
 
+  @media screen and (min-width: 768px) {
+    width: 121px;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
