@@ -36,12 +36,6 @@
   padding: 28px 28px 29px;
 
   @media screen and (min-width: 768px) {
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%) scale(1);
-
     width: 568px;
     max-height: 644px;
     height: calc(100vh - 30px);
