@@ -194,8 +194,9 @@ input.slider__nav:nth-of-type(3) {
   opacity: 0.2;
 }
 
-.control label:hover {
-  opacity: 0.5;
+.control label:hover,
+.control label:focus {
+  opacity: 1;
 }
 
 .next {
@@ -212,4 +213,6 @@ input.slider__nav:nth-of-type(3) {
 .slider__nav:checked:nth-of-type(3)~.previous .numb2 /* ДОБАВИЛ */ {
   display: block;
   z-index: 1;
+  color: #131313;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
