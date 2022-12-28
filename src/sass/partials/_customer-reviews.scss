@@ -30,9 +30,9 @@
   justify-content: center;
   width: 12px;
   height: 12px;
-  margin: 0 18px;
   border-radius: 50%;
   z-index: 10;
+  margin: 0 18px 0 0;
   outline: 6px solid rgba(217, 217, 217, 1);
   outline-offset: -6px;
   box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
@@ -40,6 +40,11 @@
   appearance: none;
   backface-visibility: hidden;
 }
+
+input.slider__nav:nth-of-type(3) {
+  margin: 0;
+}
+
 .slider__nav:checked {
   animation: check 0.4s linear forwards;
   color: #333;
@@ -136,16 +141,78 @@
   }
 }
 
-@-webkit-keyframes check {
+@keyframes check {
   100% {
     outline-color: rgba(132, 161, 120, 1);
     box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
   }
 }
 
-@keyframes check {
-  100% {
-    outline-color: rgba(132, 161, 120, 1);
-    box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+.control {
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;  
+
+  @media screen and (min-width: 480px) {
+    width: 75px;
+    height: 75px;  
   }
+
+  margin-top: -25px;
+  z-index: 55;
+}
+
+.control label {
+  z-index: 0;
+  display: none;
+  text-align: center; 
+  margin-top: 15px;
+
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    line-height: 50px;
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: 50px;
+    font-size: 50px;
+  }
+
+  line-height: 0;
+  font-size: 0;
+  width: 0;
+  height: 0;  
+
+  @media screen and (min-width: 480px) {
+    width: 75px;
+    height: 75px;  
+  }
+  cursor: pointer;
+  color: #000000;
+  opacity: 0.2;
+}
+
+.control label:hover,
+.control label:focus {
+  opacity: 1;
+}
+
+.next {
+  right: 1%;
+}
+
+.previous {
+  left: 1%;
+}
+
+.slider__nav:checked:nth-of-type(2)~.previous .numb1, /* ДОБАВИЛ */
+.slider__nav:checked:nth-of-type(1)~.next .numb2,
+.slider__nav:checked:nth-of-type(2)~.next .numb3,
+.slider__nav:checked:nth-of-type(3)~.previous .numb2 /* ДОБАВИЛ */ {
+  display: block;
+  z-index: 1;
+  color: #84a178;
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }

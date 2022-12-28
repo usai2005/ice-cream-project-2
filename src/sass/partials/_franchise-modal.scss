@@ -33,7 +33,7 @@
   border-radius: 10px;
 
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 400ms $timing-function;
+  transition: transform 400ms $timing-function, opacity 400ms $timing-function, visibility 400ms $timing-function;
 
   padding: 28px;
 

@@ -15,7 +15,8 @@
   padding-left: 28px;
   padding-right: 28px;
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 400ms $timing-function;
+  transition: transform 400ms $timing-function, opacity 400ms $timing-function,
+    visibility 400ms $timing-function;
 
   border: 2px solid getColor('accent');
   border-radius: 10px;
@@ -58,8 +59,20 @@
 }
 
 .modal-map__wrapper {
+  width: 100%;
+  height: 199px;
+
   border-radius: 10px;
   overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 260px;
+  }
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .modal-map__link {
