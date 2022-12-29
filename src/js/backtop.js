@@ -1,4 +1,3 @@
-console.log('document', document);
 document.addEventListener('DOMContentLoaded', function () {
   let gototop = document.querySelector('.ufive_uptop');
   let body = document.documentElement;
