@@ -386,9 +386,7 @@
     fill: getColor('btn-brown');
   }
 
-  &:hover .arrow-black--to-green.pulse,
-  &:hover .arrow-black--to-yellow.pulse,
-  &:hover .arrow-black--to-brown.pulse {
+  .products__item:hover & {
     animation: pulse 1s infinite;
     animation-timing-function: linear;
 
