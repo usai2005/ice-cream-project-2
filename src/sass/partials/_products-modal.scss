@@ -26,7 +26,8 @@
   visibility: hidden;
 
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 400ms $timing-function, opacity 400ms $timing-function, visibility 400ms $timing-function;
+  transition: transform 400ms $timing-function, opacity 400ms $timing-function,
+    visibility 400ms $timing-function;
 
   background-color: getColor('secondary-text');
 
@@ -347,7 +348,8 @@
 
   padding: 11px 10px;
 
-  transition: border-color 250ms $timing-function;
+  transition: border-color 250ms $timing-function,
+    background-color 250ms $timing-function;
 
   cursor: pointer;
 
